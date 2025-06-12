@@ -1,0 +1,50 @@
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+.container {
+  max-width: 700px;
+  margin: auto;
+  padding: 20px;
+}
+select, button {
+  padding: 8px 12px;
+  margin: 10px 5px 20px 0;
+}
+.data-section {
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: var(--card-bg);
+}
+.data-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 8px 0;
+}
+.label {
+  font-weight: bold;
+  margin-right: 10px;
+}
+.copy-btn {
+  padding: 3px 8px;
+  font-size: 12px;
+  cursor: pointer;
+}
+:root {
+  --bg-color: #f9f9f9;
+  --text-color: #222;
+  --card-bg: #fff;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-color: #121212;
+    --text-color: #f1f1f1;
+    --card-bg: #1e1e1e;
+  }
+}
