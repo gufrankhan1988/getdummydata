@@ -6,14 +6,35 @@ body {
   background-color: var(--bg-color);
   color: var(--text-color);
 }
+header {
+  text-align: center;
+  padding: 10px;
+}
+.logo {
+  height: 60px;
+  margin-bottom: 10px;
+}
+.tagline {
+  font-size: 14px;
+  color: gray;
+}
+.flag-container {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin: 20px 0;
+}
+.flag {
+  width: 64px;
+  height: 64px;
+  cursor: pointer;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+}
 .container {
   max-width: 700px;
   margin: auto;
   padding: 20px;
-}
-select, button {
-  padding: 8px 12px;
-  margin: 10px 5px 20px 0;
 }
 .data-section {
   border: 1px solid #ccc;
@@ -47,4 +68,16 @@ select, button {
     --text-color: #f1f1f1;
     --card-bg: #1e1e1e;
   }
+}
+
+.copy-btn {
+  padding: 3px 6px;
+  font-size: 14px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+.copy-btn::before {
+  content: "\2398";
+  font-family: Arial, sans-serif;
 }
