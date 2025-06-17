@@ -23,15 +23,24 @@
     <img src="images/uk.png" alt="UK" class="flag" onclick="setCountry('UK')" />
   </div>
 
-  <div class="container">
+ <div class="container">
     <div class="data-section">
-      <div class="data-row"><span class="label">Email:</span> <span id="email"></span> <button class="copy-btn" onclick="copyToClipboard('email')" class="copy-btn"></button></div>
-      <div class="data-row"><span class="label">Phone:</span> <span id="phone"></span> <button class="copy-btn" onclick="copyToClipboard('phone')" class="copy-btn"></button></div>
-      <div class="data-row"><span class="label">Card:</span> <span id="card"></span> <button class="copy-btn" onclick="copyToClipboard('card')" class="copy-btn"></button></div>
-      <div class="data-row"><span class="label">Address:</span> <span id="address"></span> <button class="copy-btn" onclick="copyToClipboard('address')" class="copy-btn"></button></div>
+      <div class="data-row"><span class="label">Email:</span> <span id="email"></span> <button class="copy-btn" onclick="copyToClipboard('email')">Copy</button></div>
+      <div class="data-row"><span class="label">Phone:</span> <span id="phone"></span> <button class="copy-btn" onclick="copyToClipboard('phone')">Copy</button></div>
+      <div class="data-row"><span class="label">Address:</span> <span id="address"></span> <button class="copy-btn" onclick="copyToClipboard('address')">Copy</button></div>
+    </div>
+
+    <div class="data-section">
+      <h3>Card Info</h3>
+      <div class="data-row"><span class="label">Card Number:</span> <span id="cardnumber"></span> <button class="copy-btn" onclick="copyToClipboard('cardnumber')">Copy</button></div>
+      <div class="data-row"><span class="label">Valid From:</span> <span id="validfrom"></span> <button class="copy-btn" onclick="copyToClipboard('validfrom')">Copy</button></div>
+      <div class="data-row"><span class="label">Valid To:</span> <span id="validto"></span> <button class="copy-btn" onclick="copyToClipboard('validto')">Copy</button></div>
+      <div class="data-row"><span class="label">CVV:</span> <span id="cvv"></span> <button class="copy-btn" onclick="copyToClipboard('cvv')">Copy</button></div>
     </div>
   </div>
+
 
   <script src="script.js"></script>
 </body>
 </html>
+
